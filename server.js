@@ -31,7 +31,7 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 app.get("/", function (req, res) {
   
-  // res.sendfile("index.html");
+  res.sendfile("main.handlebars");
 });
 
 app.get("/scrape", function (req, res) {
