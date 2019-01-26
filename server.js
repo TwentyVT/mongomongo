@@ -28,10 +28,6 @@ var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongotorium";
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 
-var routes = require("./controlla/mongotrolla.js");
-
-
-app.use(routes);
 
 app.get("/", function (req, res) {
   
